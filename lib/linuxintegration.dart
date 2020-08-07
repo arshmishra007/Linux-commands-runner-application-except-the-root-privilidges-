@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 String x;
 web(x) async
 {
-  var url = "http://192.168.43.16/cgi-bin/web.py?x=${x}";
+  var url = "http://<enter your ip here>/cgi-bin/web.py?x=${x}";
   var r = await http.get(url);
   print(r.body); 
 }
